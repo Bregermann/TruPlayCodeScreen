@@ -190,6 +190,10 @@ public class BSGameManager : MonoBehaviour
         if (enemyShipCount < 1)
         {
             GameOver("YOU WIN!!");
+            GameObject GM = GameObject.Find("GameManager");
+            GameManager G = GM.GetComponent<GameManager>();
+            G.battleshipWin = true;
+            G.relicsToSpawn += 1;
             SceneManager.LoadScene(1);
         }
     }
