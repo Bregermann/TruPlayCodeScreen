@@ -39,7 +39,7 @@ public class BOGameManager : MonoBehaviour
             
             if (duration < 0.0f)
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(1);
             }
             else
             {
