@@ -11,7 +11,7 @@ public class EnemyMissileScript : MonoBehaviour
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<BSGameManager>();
+        gameManager = GameObject.Find("BSGameManager").GetComponent<BSGameManager>();
         enemyScript = GameObject.Find("Enemy").GetComponent<EnemyScript>();
 
     }

@@ -8,7 +8,6 @@ public class EnterArcade : MonoBehaviour
 {
     public Text playText;
     public int whichGame;
-    public GameObject canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +22,14 @@ public class EnterArcade : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
+        GameObject pt;
+        pt = GameObject.Find("ActionText");
+        playText = pt.GetComponent<Text>();
         playText.text = "Press F to Play!";
         if (Input.GetKeyDown(KeyCode.F))
         {
-            canvas.SetActive(false);
+
+            playText.text = "";
             SceneManager.LoadScene(whichGame);
         }
     }

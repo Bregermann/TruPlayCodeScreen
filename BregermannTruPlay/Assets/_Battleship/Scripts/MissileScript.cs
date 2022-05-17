@@ -7,7 +7,7 @@ public class MissileScript : MonoBehaviour
     private BSGameManager gameManager;
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<BSGameManager>();
+        gameManager = GameObject.Find("BSGameManager").GetComponent<BSGameManager>();
     }
 
     private void OnCollisionEnter(Collision collision)

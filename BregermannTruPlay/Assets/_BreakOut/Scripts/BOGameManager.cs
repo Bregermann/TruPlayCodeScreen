@@ -123,6 +123,10 @@ public class BOGameManager : MonoBehaviour
         winText.text = "You Win! Your score is " + score.ToString() + " Look Out Behind You!";
         GMM.breakoutWin = true;
         youWin = true;
+        GameObject GM = GameObject.Find("GameManager");
+        GameManager G = GM.GetComponent<GameManager>();
+        G.breakoutWin = true;
+        G.relicsToSpawn += 1;
     }
 
 }

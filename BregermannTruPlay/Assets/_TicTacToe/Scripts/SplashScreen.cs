@@ -11,7 +11,7 @@ public class SplashScreen : MonoBehaviour
     {
         if (duration < 0.0f)
         {
-            SceneManager.LoadScene("TTTMainScreen");
+            SceneManager.LoadScene(1);
         }
         else
         {

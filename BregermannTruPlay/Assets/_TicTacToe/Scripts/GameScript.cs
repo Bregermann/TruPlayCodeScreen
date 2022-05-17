@@ -321,8 +321,11 @@ public class GameScript : MonoBehaviour
     }
     void ToTheWorld()
     {
-
-        SceneManager.LoadScene(3);
+        GameObject GM = GameObject.Find("GameManager");
+        GameManager G = GM.GetComponent<GameManager>();
+        G.tictactoeFinish = true;
+        G.relicsToSpawn += 1;
+        SceneManager.LoadScene(1);
     }
 
 }

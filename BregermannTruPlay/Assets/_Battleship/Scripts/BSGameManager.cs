@@ -190,7 +190,7 @@ public class BSGameManager : MonoBehaviour
         if (enemyShipCount < 1)
         {
             GameOver("YOU WIN!!");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(1);
         }
     }
 
